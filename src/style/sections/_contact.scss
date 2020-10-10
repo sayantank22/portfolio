@@ -1,0 +1,80 @@
+#contact {
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    clip-path: none;
+    margin-top: 0;
+    -webkit-clip-path: none;
+  }
+
+  .container {
+    width: 500px;
+  }
+
+  .contact-wrapper {
+    margin-top: 3.2rem;
+    padding: 0 2rem;
+    backface-visibility: hidden;
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+
+    &__text,
+    a {
+      font-size: 2.4rem;
+
+      // Responsive for contact text
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px 15px;
+    background: #343a40;
+  }
+
+  input[type='submit'] {
+    font-family: 'Montserrat', sans-serif;
+    float: middle;
+    margin: 5px 0 0 0;
+    font-size: 12pt;
+    font-weight: 700;
+    padding: 10px 30px;
+    background: transparent;
+    color: $white-color;
+    border: 2px solid $white-color;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $white-color;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
