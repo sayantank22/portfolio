@@ -42,22 +42,7 @@
     }
   }
 
-  input[type='text'] {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 12pt;
-    margin-bottom: 3px;
-    color: rgb(255, 255, 255);
-    outline: none;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    padding: 10px 15px;
-    background: #343a40;
-  }
-
+  input[type='text'],
   input[type='email'],
   textarea {
     display: block;
